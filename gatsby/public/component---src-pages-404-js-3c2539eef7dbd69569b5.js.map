@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":["FourOhFourPage"],"mappings":"2FAAA,gCAIeA,UAFQ,kBAAM","file":"component---src-pages-404-js-3c2539eef7dbd69569b5.js","sourcesContent":["import React from 'react';\n\nconst FourOhFourPage = () => <h2>Woops! Looks like you hit a deadend</h2>;\n\nexport default FourOhFourPage;\n"],"sourceRoot":""}

@@ -3,22 +3,19 @@ import React from 'react';
 import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 
-const SlicemasterPage = ({ data: { person } }) => {
-  console.log(person);
-  return (
-    //
-    <>
-      <SEO title={person.name} image={person.image.asset.fluid.src} />
-      <div className="center">
-        <Img fluid={person.image.asset.fluid} alt={person.name} />
-        <h2>
-          <span className="mark">{person.name}</span>
-        </h2>
-        <p>{person.description}</p>
-      </div>
-    </>
-  );
-};
+const SlicemasterPage = ({ data: { person } }) => (
+  //
+  <>
+    <SEO title={person.name} image={person.image.asset.fluid.src} />
+    <div className="center">
+      <Img fluid={person.image.asset.fluid} alt={person.name} />
+      <h2>
+        <span className="mark">{person.name}</span>
+      </h2>
+      <p>{person.description}</p>
+    </div>
+  </>
+);
 export default SlicemasterPage;
 
 // Should be dynamic

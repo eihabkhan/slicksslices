@@ -4,7 +4,7 @@ import { ItemsGrid, ItemStyles } from '../styles/Grids';
 const LoadingGrid = ({ count }) => (
   <ItemsGrid>
     {Array.from({ length: count }, (_, index) => (
-      <ItemStyles key={index}>
+      <ItemStyles key={`loader-${index}`}>
         <p>
           <span className="mark">Loading...</span>
         </p>

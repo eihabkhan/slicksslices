@@ -120,12 +120,8 @@ const turnSlicemastersIntoPages = async ({ graphql, actions }) => {
   // 3. how many pages, how many slicemasters, how many per page
   const pageSize = parseInt(process.env.GATSBY_PAGE_SIZE);
   const pageCount = Math.ceil(slicemasters.totalCount / pageSize);
-  console.log(
-    `There are ${slicemasters.totalCount} total people. We have ${pageCount} pages with ${pageSize} per page`
-  );
   // 4. loop from one to n, n = number of pages
   Array.from({ length: pageCount }).forEach((_, index) => {
-    console.log(`Creating page (${index})`);
     actions.createPage({
       path: `/slicemasters/${index + 1}`,
       component: path.resolve('./src/pages/slicemasters.js'),
